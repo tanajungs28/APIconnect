@@ -7,7 +7,7 @@ API連携アプリ
 - 現在位置取得アプリ
 
 ## ③DEMO
-- 
+- https://tanajungs28.github.io/APIconnect/
 
 ## ④作ったアプリケーション用のIDまたはPasswordがある場合
 
