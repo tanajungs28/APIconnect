@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- タイトル表示 -->
+    <h1>google mapを連携したい画面</h1>
+    <!-- 何かギミックを入れるためのボタンを用意 -->
+     <button id = btn>画面移動</button>
+     <button id = btn_now>現在位置取得</button>
+        <button id=btn_list>リスト取得</button>
+     <!-- マップの表示 -->
+    <div id="map"></div>
+
+    <!-- APIの読み込み -->
+    <!-- ページ更新時にスクリプトがまだロードされていないタイミングで initMap が呼び出されると動作しないため、スクリプトタグで async defer を使用し、APIが完全にロードされた後に initMap を実行する。-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOURKEY&callback=initMap&v=weekly&libraries=marker" async defer></script>
+
+    <script>
+    // マップの初期化と初期位置の表示
+    async function initMap() {
+        console.log("マップ初期化")
+      const initialPosition = { lat: 35.6895, lng: 139.6917 }; // 東京
+      const map = new google.maps.Map(document.getElementById("map"), {
+        center: initialPosition,
+        zoom: 15,
+      });
+    </script>
+
+
+    <!-- jquery指定 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jsファイル指定、importを使用するためにはscript指定時に「type="module"」を入れないと動かない -->
+    <script type="module" src="js/script.js"></script>
+
+</body>
+</html>
