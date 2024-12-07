@@ -22,6 +22,7 @@ API連携アプリ
 
 - 難しかった点：
   * APIを活用してgoogleマップを表示させる点（google公式ドキュメントがわかりにく）
+  * スプレッドシートから位置情報を引っ張ってきた際、文字列として取得した情報をmapの位置情報に入れていたためエラーが発生していた。（文字列から数値情報に変換しないといけないことに気づくのに時間がかかった）  
 - 次回トライしたいこと：
   * デザイン面ももう少しこだわる
 
@@ -41,3 +42,11 @@ API連携アプリ
   - 2.async/await 入門（JavaScript）
   - [https://qiita.com/soarflat/items/1a9613e023200bbebcb3]
 
+  - 3.【Java】try-catchで例外処理を実装しよう！Exceptionクラスの使い方
+  - [https://www.sejuku.net/blog/26344]
+
+  - 4.【JavaScript入門】new演算子の使い方と生成方法まとめ！
+  - [https://www.sejuku.net/blog/24383]
+
+  - 5.parseFloat関数(文字列を浮動小数点数に変換する)
+  - [https://www.javadrive.jp/javascript/global_function/index2.html]
